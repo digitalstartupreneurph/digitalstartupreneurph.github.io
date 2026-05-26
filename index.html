@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,13 +103,13 @@ section{padding:96px 48px;}
   text-transform:uppercase;color:var(--blue);
   display:flex;align-items:center;gap:10px;margin-bottom:14px;
 }
-.lbl::before{content:'';width:24px;height:2px;background:var(--blue);flex-shrink:0;}
+.lbl::before{content:'';width:28px;height:2px;background:#7B9FFF;flex-shrink:0;}
 
 /* ── TYPOGRAPHY ── */
 h1{font-size:clamp(32px,5.5vw,64px);font-weight:800;line-height:1.08;letter-spacing:-0.03em;color:var(--white);}
-h2{font-size:clamp(26px,4vw,46px);font-weight:800;line-height:1.12;letter-spacing:-0.025em;color:var(--white);}
-h3{font-size:18px;font-weight:700;line-height:1.3;color:var(--white);}
-p{font-size:16px;line-height:1.75;color:var(--white-soft);}
+h2{font-size:clamp(30px,4.5vw,52px);font-weight:800;line-height:1.1;letter-spacing:-0.025em;color:var(--white);}
+h3{font-size:20px;font-weight:700;line-height:1.3;color:var(--white);}
+p{font-size:17px;line-height:1.8;color:var(--white-soft);}
 
 /* ── HERO ── */
 .hero{
@@ -141,6 +140,16 @@ p{font-size:16px;line-height:1.75;color:var(--white-soft);}
   margin-bottom:44px;
   opacity:0;animation:up .6s .48s forwards;
 }
+.btn-inquiry{
+  background:#FF5C28;color:#fff;
+  padding:16px 32px;border-radius:8px;
+  font-size:16px;font-weight:700;text-decoration:none;
+  transition:opacity .2s,transform .15s,box-shadow .2s;
+  display:inline-flex;align-items:center;gap:8px;
+  box-shadow:0 0 32px rgba(255,92,40,0.45);
+  white-space:nowrap;
+}
+.btn-inquiry:hover{opacity:.88;transform:translateY(-2px);box-shadow:0 8px 40px rgba(255,92,40,.55);}
 .btn-primary{
   background:var(--blue);color:#fff;
   padding:14px 28px;border-radius:8px;
@@ -482,6 +491,16 @@ footer{
   </div>
 </section>
 
+<!-- INQUIRY CTA after framework -->
+<section style="background:var(--navy);padding:48px 48px 0;">
+  <div class="container">
+    <div style="border-top:1px solid var(--border2);padding-top:48px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;">
+      <p style="color:var(--white-soft);font-size:17px;max-width:480px;line-height:1.7;">Does this sound like what your business needs? Let's talk about it.</p>
+      <a href="https://tally.so/r/rjkkxv" target="_blank" class="btn-inquiry">Submit an Inquiry →</a>
+    </div>
+  </div>
+</section>
+
 <!-- HOW IT WORKS -->
 <section class="how">
   <div class="container">
@@ -528,7 +547,7 @@ footer{
         <div class="cs-head">
           <div class="cs-head-left">
             <h3>From No IT to Fully Governed</h3>
-            <p>Precision manufacturing · Laguna, Philippines · 50+ employees</p>
+            <p>Precision manufacturing · Laguna, Philippines · 70+ employees</p>
           </div>
           <div class="cs-years"><div class="cs-years-num">6</div><div class="cs-years-label">years ongoing</div></div>
         </div>
@@ -548,12 +567,12 @@ footer{
         <div class="cs-head">
           <div class="cs-head-left">
             <h3>Built to Last — Through Growth, Relocation, and Rebrand</h3>
-            <p>Manufacturing · Laguna, Philippines · Family-owned → Internationally backed</p>
+            <p>Manufacturing · Laguna, Philippines · Privately held → Internationally backed</p>
           </div>
           <div class="cs-years"><div class="cs-years-num">7</div><div class="cs-years-label">years ongoing</div></div>
         </div>
         <div class="cs-body">
-          <p>A family-owned manufacturing company had no IT structure when their internet went down and nobody knew why. We built their IT foundation from zero, then led a complete office relocation — new infrastructure, cabling, VoIP, CCTV, ISP migration, full user migration. Zero operational disruption. The company grew into a larger, internationally backed operation and rebranded. When they needed IT leadership again — they called the same Fractional CIO back. When a company comes back, that is the only endorsement that counts.</p>
+          <p>A privately held manufacturing company had no IT structure when their internet went down and nobody knew why. We built their IT foundation from zero, then led a complete office relocation — new infrastructure, cabling, VoIP, CCTV, ISP migration, full user migration. Zero operational disruption. The company grew into a larger, internationally backed operation and rebranded. When they needed IT leadership again — they called the same Fractional CIO back. When a company comes back, that is the only endorsement that counts.</p>
           <div class="cs-outcomes">
             <div class="outcome"><h4>IT governance from zero</h4><p>From no IT function to a fully governed environment.</p></div>
             <div class="outcome"><h4>Full relocation, zero disruption</h4><p>Entire infrastructure migrated on time, on budget.</p></div>
@@ -584,6 +603,22 @@ footer{
             <div style="font-size:13px;color:var(--muted);">JGM Philippines Inc.</div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INQUIRY CTA after results -->
+<section style="background:var(--navy2);padding:56px 48px;">
+  <div class="container">
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;">
+      <div>
+        <h3 style="font-size:22px;margin-bottom:8px;color:var(--white);">Ready to fix your IT for good?</h3>
+        <p style="color:var(--muted);font-size:15px;">Start with a free 30-min discovery call or send us your inquiry.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;">
+        <a href="https://tally.so/r/rjkkxv" target="_blank" class="btn-inquiry">Submit an Inquiry →</a>
+        <a href="https://calendly.com/digitalstartupreneurph/30min" target="_blank" class="btn-primary">Book a Discovery Call</a>
       </div>
     </div>
   </div>
@@ -638,15 +673,15 @@ footer{
 
 
 <!-- CONTACT -->
-<section style="background:var(--navy3);padding:96px 48px;">
+<section style="background:var(--navy3);padding:80px 48px;">
   <div class="container">
-    <div style="max-width:680px;margin:0 auto;text-align:center;">
-      <div class="lbl reveal" style="justify-content:center;">Get in touch</div>
+    <div style="max-width:720px;">
+      <div class="lbl reveal">Get in touch</div>
       <h2 class="reveal" style="margin-bottom:16px;">Have a specific question?</h2>
-      <p class="reveal" style="color:var(--white-soft);font-size:17px;max-width:480px;margin:0 auto 36px;line-height:1.75;">Not ready for a discovery call yet? Send us your inquiry and we'll get back to you within 24 hours.</p>
-      <div class="reveal" style="display:flex;flex-wrap:wrap;gap:14px;justify-content:center;">
-        <a href="https://tally.so/r/rjkkxv" target="_blank" class="btn-primary">Submit an Inquiry →</a>
-        <a href="https://calendly.com/digitalstartupreneurph/30min" target="_blank" class="btn-ghost" style="padding:14px 0;">Or book a free discovery call</a>
+      <p class="reveal" style="color:var(--white-soft);font-size:18px;max-width:560px;margin-bottom:36px;line-height:1.75;">Not ready for a discovery call yet? Send us your inquiry and we'll get back to you within 24 hours.</p>
+      <div class="reveal" style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;">
+        <a href="https://tally.so/r/rjkkxv" target="_blank" class="btn-inquiry">Submit an Inquiry →</a>
+        <a href="https://calendly.com/digitalstartupreneurph/30min" target="_blank" class="btn-ghost" style="padding:14px 0;font-size:15px;">Or book a free discovery call</a>
       </div>
     </div>
   </div>
